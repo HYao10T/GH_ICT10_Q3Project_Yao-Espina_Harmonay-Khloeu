@@ -1,52 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Emblema+One&family=Playwrite+IT+Moderna:wght@100..400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
     <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Project: Goldenthorn Institute of Scholars</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>project: intramurals</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <!-- NAVIGATION BAR -->
+     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <img src="GIoS.png" alt="Riverbend Brew Logo" class="rounded" style="width: 70px;">
-            </a>
-            <p>Goldenthorn Institiute of Scholars</p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <!-- NAVBAR -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="home.html">Sign up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Team Checker</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="player.html">List of Players</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Sign up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team Checker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="players.html">List of Players</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- INTRAMURALS TEAMS -->
+    <div class="intrams_team">
         <h1>Intrams team</h1>
     <form>
         <label for="OR"> Are you done with the online registration?</label><br>
@@ -76,14 +58,17 @@
             <option value="Topaz">Topaz</option>
             <option disabled selected value="0">Choose your option</option>
         </select>
+
+        <!-- BUTTON -->
         <input type="button" py-click="team_signup" value="Check">
-    </form>
+    </div>
+
     <div id="output"></div>
+    <py-script src="team.py"></py-script>
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <p><a href="https://github.com/KEspina-9T?tab=repositories" target="_blank">Khloe Myles S. Espina & Harmony Gail K. Yao| 10-Topaz</p>
+        <p><a href="https://github.com/HYao10T/GH_ICT10_Q3Project_Yao-Espina_Harmonay-Khloeu" target="_blank">Khloe Myles S. Espina & Harmony Gail K. Yao| 10-Topaz</p>
     </footer>
 </body>
-
-
 </html>
-
