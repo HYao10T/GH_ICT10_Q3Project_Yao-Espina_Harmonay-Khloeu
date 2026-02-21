@@ -2,4 +2,6 @@ from pyscript import display, document # type: ignore (quick fix feature)
 
 
 def plyers_list(e):
-    document.getElementById('output').innerHTML='' #ensures the output wont repeat
+    players = ['Abdullah','Abeleda','Arce','Arias','Bonzon','Cajucom','Catimbang','Choi','Cotioco','Daradal','Enriquez','Escobar' , 'Espina','Gano','Garcia','Kaur','Ong','Rufo','Sanchez','Santos','Tan','Vilale','Yao','Zosa']
+
+    display(f'{players}, target="output")
