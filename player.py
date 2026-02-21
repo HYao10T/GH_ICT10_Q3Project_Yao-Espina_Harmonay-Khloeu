@@ -1,7 +1,9 @@
-from pyscript import display, document # type: ignore (quick fix feature)
+from pyscript import display, document
 
+def display_players(e):
+    document.getElementById('output').innerHTML = " "
 
-def plyers_list(e):
-    players = ['Abdullah','Abeleda','Arce','Arias','Bonzon','Cajucom','Catimbang','Choi','Cotioco','Daradal','Enriquez','Escobar' , 'Espina','Gano','Garcia','Kaur','Ong','Rufo','Sanchez','Santos','Tan','Vilale','Yao','Zosa']
+    players = ['Abdullah','Abeleda','Arce','Arias','Bonzon','Cajucom','Catimbang', 'Choi', 'Cotioco','Daradal','Enriquez','Escobar', 'Espina', 'Gano','Garcia','Kaur','Ong','Rufo','Sanchez','Santos','Tan','Vilale','Yao','Zosa']
 
-    display(f'{players}, target="output")
+    for p in players: 
+        display(f"-{p}", target="output")
