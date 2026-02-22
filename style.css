@@ -64,6 +64,7 @@ form input{
     border-radius: 15px; 
     box-shadow: 0 20px 40px #00000033;
     text-align: center;
+    border: 4px dashed #4e443a;
 }
 
  #button {
@@ -128,3 +129,4 @@ footer {
     opacity: 0.6;
     letter-spacing: 2px;
 }
+
